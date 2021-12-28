@@ -8,9 +8,9 @@
 
 
 // Class header
-class Re : public Piece {
+class Empty : public Piece {
 public:
-	Re(char y, int x, Color color);
+	Empty(char y, int x, Color color);
 	std::string toString();
 	bool isValidMove(char y, int x);
 private:
