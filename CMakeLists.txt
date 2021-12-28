@@ -2,8 +2,8 @@ cmake_minimum_required(VERSION 3.2 FATAL_ERROR)
 
 project(lab-chess VERSION 1.0)
 
-file( GLOB LIB_SOURCES lib/*.cpp )
-file( GLOB LIB_HEADERS lib/*.h )
+file( GLOB LIB_SOURCES lib/sources/*.cpp )
+file( GLOB LIB_HEADERS lib/headers/*.h )
 add_library( MyLib ${LIB_SOURCES} ${LIB_HEADERS} )
 
 add_executable(scacchiera Scacchiera.cpp)
