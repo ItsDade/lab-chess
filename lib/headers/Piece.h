@@ -1,5 +1,7 @@
-// Precompiler options
-#pragma once
+// Include guards
+#ifndef PIECE_H
+#define PIECE_H
+
 
 // Include files
 #include "Color.h"
@@ -21,3 +23,6 @@ class Piece {
 		char column;
 		Color color;
 };
+
+
+#endif // !PIECE_H

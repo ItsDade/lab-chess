@@ -1,4 +1,4 @@
-#include "Re.h"
+#include "../headers/Re.h"
 
 Re::Re(char y, int x, Color color) : Piece(y, x, color) {
 }

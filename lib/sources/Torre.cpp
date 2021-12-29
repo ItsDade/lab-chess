@@ -1,4 +1,4 @@
-#include "Torre.h"
+#include "../headers/Torre.h"
 
 Torre::Torre(char y, int x, Color color) : Piece(y, x, color) {
 }

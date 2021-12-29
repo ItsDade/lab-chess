@@ -1,5 +1,6 @@
-// Precompiler options
-#pragma once
+// Include guards
+#ifndef CAVALLO_H
+#define CAVALLO_H
 
 // Include files
 #include "Color.h"
@@ -16,3 +17,5 @@ public:
 private:
 
 };
+
+#endif // !CAVALLO_H

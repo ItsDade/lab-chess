@@ -1,5 +1,6 @@
-// Precompiler options
-#pragma once
+// Include guards
+#ifndef PEDONE_H
+#define PEDONE_H
 
 // Include files
 #include "Color.h"
@@ -16,3 +17,5 @@ class Pedone : public Piece {
 	private:
 		bool firstMove = true;
 };
+
+#endif // !PEDONE_H

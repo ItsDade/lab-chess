@@ -1,5 +1,6 @@
-// Precompiler options
-#pragma once
+// Include guards
+#ifndef TORRE_H
+#define TORRE_H
 
 // Include files
 #include "Color.h"
@@ -16,3 +17,5 @@ public:
 private:
 
 };
+
+#endif // !TORRE_H

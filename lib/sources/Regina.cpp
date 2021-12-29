@@ -1,4 +1,4 @@
-#include "Regina.h"
+#include "../headers/Regina.h"
 
 Regina::Regina(char y, int x, Color color) : Piece(y, x, color) {
 }

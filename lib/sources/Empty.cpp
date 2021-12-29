@@ -1,4 +1,4 @@
-#include "Empty.h"
+#include "../headers/Empty.h"
 
 Empty::Empty(char y, int x, Color color) : Piece(y, x, color) {
 }

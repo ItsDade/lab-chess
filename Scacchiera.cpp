@@ -1,5 +1,5 @@
 #include <iostream>
-#include "lib/Board.h"
+#include "lib/headers/Board.h"
 
 int main() {
 	Board b{};

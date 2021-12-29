@@ -1,4 +1,4 @@
-#include "Alfiere.h"
+#include "../headers/Alfiere.h"
 
 Alfiere::Alfiere(char y, int x, Color color) : Piece(y, x, color) {
 }

@@ -1,5 +1,6 @@
-// Precompiler options
-#pragma once
+// Include guards
+#ifndef BOARD_H
+#define BOARD_H
 
 // Include files
 #include "Color.h"
@@ -31,3 +32,4 @@ class Board {
 
 		class NotValidMoveExcpetion {};
 };
+#endif // !BOARD_H

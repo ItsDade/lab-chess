@@ -1,5 +1,6 @@
-// Precompiler options
-#pragma once
+// Include guards
+#ifndef REGINA_H
+#define REGINA_H
 
 // Include files
 #include "Color.h"
@@ -16,3 +17,5 @@ public:
 private:
 
 };
+
+#endif // !REGINA_H

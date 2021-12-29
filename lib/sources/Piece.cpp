@@ -1,4 +1,4 @@
-#include "Piece.h"
+#include "../headers/Piece.h"
 
 Piece::Piece(char y, int x, Color co){
 	row = x;

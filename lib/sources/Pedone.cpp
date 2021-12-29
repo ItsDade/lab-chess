@@ -1,4 +1,4 @@
-#include "Pedone.h"
+#include "../headers/Pedone.h"
 
 Pedone::Pedone(char y, int x, Color color) : Piece(y, x, color) {
 }
@@ -11,10 +11,5 @@ std::string Pedone::toString(){
 }
 
 bool Pedone::isValidMove(char y, int x) {
-	if (firstMove) {
-
-
-	
-		firstMove = false;
-	}
+	return true;
 }

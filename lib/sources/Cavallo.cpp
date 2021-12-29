@@ -1,4 +1,4 @@
-#include "Cavallo.h"
+#include "../headers/Cavallo.h"
 
 Cavallo::Cavallo(char y, int x, Color color) : Piece(y, x, color) {
 }
