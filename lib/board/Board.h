@@ -1,34 +1,38 @@
 #ifndef BOARD_H
 #define BOARD_H
 
-#include "../pieces/Piece.h"
-#include <vector>
-#include <memory>
 #include <string>
-#include <sstream>
+#include <vector>
+
+// Includes
+#include "../Colors.h"
+#include "Square.h"
 
 #include "../pieces/Pawn.h"
-#include "../Color/Color.h"
+#include "../pieces/Rook.h"
+#include "../pieces/Knight.h"
+#include "../pieces/King.h"
+#include "../pieces/Queen.h"
+#include "../pieces/Bishop.h"
 
 
-class Board {
+using namespace std;
+class Board{
 	public:
-		// Variables
+		// Constructors
+		Board();
+
+		// Destructors
+		~Board();
 
 		// Functions
-		Board();
-		std::string toString() const;
+		Square* getSquare(char x, int y);
+		string toString();
 
 	private:
-		// Variables
-		std::vector<std::unique_ptr<Piece>> board;
+		vector<Square*> board;
 
-		// Functions
-		Piece* getPiece(char y, int x) const;
-
-
-	friend std::ostream& operator<<(std::ostream& os, const Board& dt);
 };
 
-
 #endif // !BOARD_H
+

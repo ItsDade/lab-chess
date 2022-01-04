@@ -1,15 +1,18 @@
 #include "Pawn.h"
+#include "../board/Board.h"
+#include "../board/Square.h"
 
-Pawn::Pawn(char c, int r, Color co) : Piece(c, r, co) {}
+// Constructors
+Pawn::Pawn(Color c) : Piece(c) {}
 
-bool Pawn::isValidMove(char y, int x)
-{
-	return true;
+// Functions
+bool Pawn::canMove(Board* b, Square* i, Square* f){
+	return false;
 }
 
-std::string Pawn::toString(){
-	if (color == Color::Black)
-		return "P";
-	else
+std::string Pawn::toString() {
+	if (color == Color::White)
 		return "p";
+	else
+		return "P";
 }

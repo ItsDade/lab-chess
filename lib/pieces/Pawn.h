@@ -1,15 +1,23 @@
 #ifndef PAWN_H
 #define PAWN_H
 
+// Includes
 #include "Piece.h"
-#include "../Color/Color.h"
+
 
 class Pawn : public Piece {
-public:
-	Pawn(char c, int r, Color co);
-	bool isValidMove(char y, int x);
-	std::string toString();
+	public:
+		// Constructors
+		Pawn(Color c);
+
+		// Functions
+		bool canMove(Board* b, Square* i, Square* f);
+		std::string toString();
+
+	private:
+		bool firstMove = true;
+
 };
 
-
 #endif // !PAWN_H
+
