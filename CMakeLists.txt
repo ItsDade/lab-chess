@@ -1,13 +1,10 @@
 cmake_minimum_required(VERSION 3.2 FATAL_ERROR)
 
 project(lab-chess VERSION 1.0 LANGUAGES CXX)
+set(CMAKE_CXX_FLAGS "-O2")
 
-file( GLOB SOURCES lib/*/*.cpp lib/*.cpp)
-file( GLOB HEADERS lib/*/*.h lib/*.h)
-add_library( chess ${SOURCES} ${HEADERS} )
+file(GLOB SOURCES src/*/*.cpp )
+file(GLOB HEADERS src/*/*.h)
 
-add_executable(replay ./src/replay/Replay.cpp)
-add_executable(scacchiera ./src/scacchiera/Scacchiera.cpp)
-
-target_link_libraries(replay chess)
-target_link_libraries(scacchiera chess)
+add_executable(scacchiera ./exes/scacchiera.cpp ${SOURCES} ${HEADERS})
+add_executable(replay ./exes/replay.cpp ${SOURCES} ${HEADERS})
